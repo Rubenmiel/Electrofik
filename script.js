@@ -120,10 +120,7 @@ function updateCompareBar() {
   const count = selected.length;
 
   // Contador
-  compareCount.textContent =
-    count === 0
-      ? "0 producto(s) seleccionado(s)"
-      : `${count} producto(s) seleccionado(s)`;
+  compareCount.textContent = `${count} producto(s) seleccionado(s)`;
 
   // Slots
   compareSlots.innerHTML = "";
