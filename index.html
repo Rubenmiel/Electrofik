@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electrofik – Comparador de Productos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">⚡ Electrofik</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Comparar</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Compara tus productos electrónicos favoritos</h1>
+      <p>Selecciona hasta 3 productos y descubre cuál se adapta mejor a tus necesidades.</p>
+    </section>
+
+    <section class="product-grid">
+      <h2>Catálogo de productos</h2>
+      <div id="catalog" class="grid"></div>
+    </section>
+
+    <section class="compare-bar" id="compare-bar">
+      <div class="compare-bar-inner">
+        <span id="compare-count">0 producto(s) seleccionado(s)</span>
+        <div id="compare-slots" class="compare-slots"></div>
+        <button id="compare-btn" class="btn-compare" disabled>Comparar</button>
+        <button id="clear-btn" class="btn-clear">Limpiar selección</button>
+      </div>
+    </section>
+
+    <section id="comparison-result" class="comparison-result hidden">
+      <h2>Resultado de la comparación</h2>
+      <div id="comparison-table-wrapper"></div>
+      <button id="close-comparison" class="btn-close">Cerrar comparación</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Electrofik – Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
